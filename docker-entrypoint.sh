@@ -11,12 +11,12 @@ echo "==> Updating MySQL system user's ID to ${SYSTEM_UID} (${SYSTEM_UID_TYPE})"
 usermod -u ${SYSTEM_UID} mysql > /dev/null 2>&1
 
 echo "==> Updating ownership of data directory (${DATA_HOME})"
-mkdir -p "${LOG_HOME}"
-chown -R mysql "${LOG_HOME}"
+mkdir -p "${DATA_HOME}"
+chown -R mysql "${DATA_HOME}"
 
 echo "==> Updating ownership of log directory (${LOG_HOME})"
-mkdir -p "${RUN_HOME}"
-chown -R mysql "${RUN_HOME}"
+mkdir -p "${LOG_HOME}"
+chown -R mysql "${LOG_HOME}"
 
 echo "==> Updating ownership of run directory (${RUN_HOME})"
 mkdir -p "${RUN_HOME}"
