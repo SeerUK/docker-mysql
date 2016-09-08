@@ -70,5 +70,5 @@ else
     echo "==> Using an existing volume of MySQL"
 fi
 
-echo "==> Starting MySQL"
-exec mysqld_safe
+echo "==> Running CMD"
+exec "@"
