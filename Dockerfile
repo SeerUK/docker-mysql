@@ -7,7 +7,7 @@ ENV MYSQL_USER docker
 ENV MYSQL_PASS docker
 ENV TERM dumb
 
-COPY ./docker-entrypoint.sh /
+COPY ./provisioning/docker-entrypoint.sh /
 
 # Install MariaDB
 RUN \
